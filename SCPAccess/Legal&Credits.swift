@@ -54,7 +54,11 @@ struct credits: View {
                 nsp()
                 nsp()
                 nsp()
-                Text("SCP-002: author unknown (Credited as The Administrator) (https://scp-wiki.net/scp-002)")
+                Group {
+                    Text("SCP-002: author unknown (Credited as The Administrator) (https://scp-wiki.net/scp-002)")
+                    nsp()
+                    Text("SCP-003: author DrEverettMan (https:scp-wiki.net/scp-002)")
+                }
             }
         }
     }
