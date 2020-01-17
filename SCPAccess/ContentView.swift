@@ -42,21 +42,31 @@ struct HomeMenu: View {
         VStack {
             Header()
             nsp()
-            NavigationLink(destination:Series1List()) {
-                Text("Series I")
-                    .font(.title)
+            NavigationLink(destination: Series1List()) {
+                Text("Sort By Series")
+                    .font(.largeTitle)
             }
-            Text("Series II [N/A]")
-                .font(.title)
-            Text("Series III [N/A]")
-                .font(.title)
-            Text("Series IV [N/A]")
-                .font(.title)
-            Text("Series V [N/A]")
-                .font(.title)
+            nsp()
+            NavigationLink(destination: OCView()) {
+                Text("Sort By Object Class")
+                    .font(.largeTitle)
+            }
             nsp()
             NavigationLink(destination: Legal_Credits()) {
                 Text("Legal & Credits")
+            }
+        }
+    }
+}
+
+struct SeriesListFull: View {
+    var body: some View {
+        VStack {
+            Header()
+            nsp()
+            NavigationLink(destination: Series1List()) {
+                Text("Series I")
+                    .font(.largeTitle)
             }
         }
     }
