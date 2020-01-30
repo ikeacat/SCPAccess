@@ -10,6 +10,7 @@ import SwiftUI
 
 struct EuclidView: View {
     var body: some View {
+        ScrollView {
         VStack {
             Header()
             Group {
@@ -44,13 +45,41 @@ struct EuclidView: View {
         }
     }
 }
+}
+
+struct SafeView: View {
+    var body: some View {
+        ScrollView {
+            VStack {
+                Header()
+                Group {
+                    NavigationLink(destination:SCP005()) {
+                        HStack {
+                            Text("SCP-005")
+                            quickS(nil,five)
+                            Text("Skeleton Key")
+                                .italic()
+                                .foregroundColor(.white)
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
 
 struct OCView: View {
     var body: some View {
         VStack {
             Header()
+            nsp()
             NavigationLink(destination:EuclidView()) {
                 Text("Euclid")
+                    .font(.largeTitle)
+            }
+            nsp()
+            NavigationLink(destination:SafeView()) {
+                Text("Safe")
                     .font(.largeTitle)
             }
         }
