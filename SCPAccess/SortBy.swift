@@ -59,7 +59,16 @@ struct SafeView: View {
                             quickS(nil,five)
                             Text("Skeleton Key")
                                 .italic()
-                                .foregroundColor(.white)
+                                .foregroundColor(Color("Adaptive"))
+                        }
+                    }
+                    NavigationLink(destination:SCP006()) {
+                        HStack {
+                            Text("SCP-005")
+                            quickS(nil,five)
+                            Text("Fountain of Youth")
+                                .italic()
+                                .foregroundColor(Color("Adaptive"))
                         }
                     }
                 }

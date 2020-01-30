@@ -62,6 +62,8 @@ struct credits: View {
                     Text("SCP-004: author unknown (Anonymous) (https://scp-wiki.net/scp-004")
                     nsp()
                     Text("SCP-005: author unknown (Account Deleted) (https://scp-wiki.net/scp-005")
+                    nsp()
+                    Text("SCP-006: author Dr_Schubert (https://scp-wiki.net/scp-006)")
                 }
             }
         }
