@@ -625,6 +625,7 @@ struct SCP005: View {
                         Text("Safe")
                         Spacer()
                     }
+                    Divider()
                 }
                 // Special Containment Procedures
                 Group {
@@ -644,6 +645,7 @@ struct SCP005: View {
                     nsp()
                     Text("In appearance, SCP-005 resembles an ornate key, displaying the characteristics of a typical mass produced key used in the 1920s. The key was discovered when a civilian used it to infiltrate a high security facility. SCP-005 seems to have the unique ability to open any and all forms of lock (See Appendix A), be they mechanical or digital, with relative ease. The origin of this ability has yet to be determined.")
                     nsp()
+                    Divider()
                 }
                 Group {
                     HStack {
@@ -659,6 +661,7 @@ struct SCP005: View {
                     }
                     nsp()
                     Text("While SCP-005 has been shown to be effective in removing almost any form of locking device, further experiments have shown that efforts to disguise the purpose or identity of a lock have proven at least somewhat successful in defeating SCP-005's ability. In approximately 50% of cases where a volunteer was not able to identify a locking device as such, SCP-005 was not successful in deactivating the device. Due to these results, SCP-005 has been tentatively classified as 'sentient' and further tests are being run to determine its cognitive abilities. However, there are no results that show any traits that prevent it from being able to identify any particular locking device, only that the aforementioned device has been heavily concealed and disguised.").fixedSize(horizontal: false, vertical: true)
+                    Divider()
                 }
                 Group {
                     nsp()
@@ -713,6 +716,7 @@ struct SCP006: View {
                                     Spacer()
                                 }
                                 nsp()
+                                Divider()
                             }
                             Group {
                                 HStack {
@@ -732,6 +736,7 @@ struct SCP006: View {
                                     Text("4: If at any time personnel come into contact with SCP-006 or liquid from SCP-006, they are to be confined and terminated after sufficient studies are done. Due to the nature of SCP-006, the most effective termination method is incineration. (For full report, see file SCP006-TerO5)")
                                     nsp()
                                 }
+                                Divider()
                             }
                             Group {
                                 HStack {
@@ -743,6 +748,7 @@ struct SCP006: View {
                                 nsp()
                                 Text("Ingesting the liquid produces the following properties in human beings: the ability to regenerate DNA damaged by sufficient duplication, heightened excitement of cellular duplication, vastly improved abilities in the repair of damaged tissue, and a frightening increase in the effectiveness of the human immune system. Upon testing the liquid on animal subjects, hostile bacteria and viral agents were destroyed immediately. Many reptiles and birds were unaffected, while higher primates experienced the same benefits as humans.")
                                 nsp()
+                                Divider()
                                 Group {
                                     Text("SCP-006 was created by Dr_Schubert on the SCP Wiki (https://scp-wiki.net/scp-006")
                                     nsp()
