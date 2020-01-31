@@ -61,15 +61,17 @@ struct credits: View {
                     nsp()
                     Text("SCP-003: author DrEverettMan (https://scp-wiki.net/scp-003)")
                     nsp()
-                    Text("SCP-004: author unknown (Anonymous) (https://scp-wiki.net/scp-004")
+                    Text("SCP-004: author unknown (Anonymous) (https://scp-wiki.net/scp-004)")
                     nsp()
-                    Text("SCP-005: author unknown (Account Deleted) (https://scp-wiki.net/scp-005")
+                    Text("SCP-005: author unknown (Account Deleted) (https://scp-wiki.net/scp-005)")
                     nsp()
                     Text("SCP-006: author Dr_Schubert (https://scp-wiki.net/scp-006)")
                     nsp()
                 }
                 Group {
-                    Text("SCP-007: author xthevilecorruptor (https://scp-wiki.net/scp-007")
+                    Text("SCP-007: author xthevilecorruptor (https://scp-wiki.net/scp-007)")
+                    nsp()
+                    Text("SCP-008: author Lee Byron (https://scp-wiki.net/scp-008)")
                 }
             }
         }

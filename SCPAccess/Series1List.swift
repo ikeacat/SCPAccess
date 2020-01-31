@@ -30,58 +30,69 @@ struct Series1List: View {
                         Text("Awaiting De-classification [DOCS BLOCKED]")
                             .italic()
                     }
-                    NavigationLink(destination:SCP002()) { // SCP-002
-                        HStack {
-                            Text("SCP-002")
-                            quickS(nil,five)
-                            Text("The \"Living\" Room")
-                                .foregroundColor(Color("Adaptive"))
-                                .italic()
+                    Group {
+                        NavigationLink(destination:SCP002()) { // SCP-002
+                            HStack {
+                                Text("SCP-002")
+                                quickS(nil,five)
+                                Text("The \"Living\" Room")
+                                    .foregroundColor(Color("Adaptive"))
+                                    .italic()
+                            }
                         }
-                    }
-                    NavigationLink(destination:SCP003()) { // SCP-003
-                        HStack {
-                            Text("SCP-003")
-                            quickS(nil,five)
-                            Text("Biological Motherboard")
-                                .foregroundColor(Color("Adaptive"))
-                                .italic()
+                        NavigationLink(destination:SCP003()) { // SCP-003
+                            HStack {
+                                Text("SCP-003")
+                                quickS(nil,five)
+                                Text("Biological Motherboard")
+                                    .foregroundColor(Color("Adaptive"))
+                                    .italic()
+                            }
                         }
-                    }
-                    NavigationLink(destination:SCP004()) { // SCP-004
-                        HStack {
-                            Text("SCP-004")
-                            quickS(nil,five)
-                            Text("The 12 Rusty Keys and the Door")
-                                .italic()
-                                .foregroundColor(Color("Adaptive"))
+                        NavigationLink(destination:SCP004()) { // SCP-004
+                            HStack {
+                                Text("SCP-004")
+                                quickS(nil,five)
+                                Text("The 12 Rusty Keys and the Door")
+                                    .italic()
+                                    .foregroundColor(Color("Adaptive"))
+                            }
                         }
-                    }
-                    NavigationLink(destination:SCP005()) {
-                        HStack {
-                            Text("SCP-005")
-                            quickS(nil,five)
-                            Text("Skeleton Key")
-                                .italic()
-                                .foregroundColor(Color("Adaptive"))
+                        NavigationLink(destination:SCP005()) {
+                            HStack {
+                                Text("SCP-005")
+                                quickS(nil,five)
+                                Text("Skeleton Key")
+                                    .italic()
+                                    .foregroundColor(Color("Adaptive"))
+                            }
                         }
-                    }
-                    NavigationLink(destination:SCP006()) {
-                        HStack {
-                            Text("SCP-006")
-                            quickS(nil,five)
-                            Text("Fountain of Youth")
-                                .italic()
-                                .foregroundColor(Color("Adaptive"))
+                        NavigationLink(destination:SCP006()) {
+                            HStack {
+                                Text("SCP-006")
+                                quickS(nil,five)
+                                Text("Fountain of Youth")
+                                    .italic()
+                                    .foregroundColor(Color("Adaptive"))
+                            }
                         }
-                    }
-                    NavigationLink(destination:SCP007()) {
-                        HStack {
-                            Text("SCP-007")
-                            quickS(nil,five)
-                            Text("Abdominal Planet")
-                                .foregroundColor(Color("Adaptive"))
-                                .italic()
+                        NavigationLink(destination:SCP007()) {
+                            HStack {
+                                Text("SCP-007")
+                                quickS(nil,five)
+                                Text("Abdominal Planet")
+                                    .foregroundColor(Color("Adaptive"))
+                                    .italic()
+                            }
+                        }
+                        NavigationLink(destination:SCP008()) {
+                            HStack {
+                                Text("SCP-008")
+                                quickS(nil,five)
+                                Text("Zombie Plague")
+                                    .foregroundColor(Color("Adaptive"))
+                                    .italic()
+                            }
                         }
                     }
                 }
@@ -822,10 +833,180 @@ struct SCP007: View {
                 }
                 Group {
                     Divider()
-                    Text("SCP-007 was created by xthevilecorruptor on the SCP Wiki (https://scp-wiki.net/scp-007")
+                    Text("SCP-007 was created by xthevilecorruptor on the SCP Wiki (https://scp-wiki.net/scp-007)")
                     nsp()
                     Text("The documentation file in the App's database was last updated January 31, 2020")
                     nsp()
+                }
+            }.padding(.leading,5)
+            .padding(.trailing,5)
+        }
+    }
+}
+
+struct SCP008: View {
+    @State var openDocs = false
+    var body: some View {
+        ScrollView {
+            VStack {
+                // BEFORE CREDENTIALS
+                Header()
+                Group {
+                    if openDocs == false {
+                        Text("BY ORDER OF THE OVERSEER COUNCIL").font(.title).bold().multilineTextAlignment(.center).fixedSize(horizontal: false, vertical: true)
+                        nsp()
+                        Text("THIS FILE IS SUBJECT TO LEVEL 4 CLASSIFICATION").font(.title).multilineTextAlignment(.center).fixedSize(horizontal: false, vertical: true)
+                        nsp()
+                        Text("LEVEL 4 CLEARANCE IS REQUIRED").font(.largeTitle).bold().multilineTextAlignment(.center).fixedSize(horizontal: false, vertical: true)
+                    }
+                    Button(action:{
+                        withAnimation(.easeOut) {
+                            self.openDocs = true
+                        }
+                    }) {
+                        if openDocs == false {
+                            Text("Insert Security Credentials").font(.headline)
+                        } else {
+                            EmptyView()
+                        }
+                    }
+                }
+                if openDocs == true {
+                    VStack {
+                        Group {
+                            Image("SCP008").resizable().frame(width:400,height:400).padding(.top,5)
+                            Text("Ribbon diagram illustrating tertiary structure of SCP-008. Primary amino acid sequence information has been redacted.").font(.caption).multilineTextAlignment(.center)
+                            Divider()
+                            HStack {
+                                Text("Item #:").bold()
+                                Text("SCP-008")
+                                Spacer()
+                            }
+                            nsp()
+                            HStack {
+                                Text("Object Class:").bold()
+                                Text("Euclid")
+                                Spacer()
+                            }
+                            Divider()
+                        }
+                        Group {
+                            HStack {
+                                Text("Special Containment Procedures:").bold()
+                                Spacer()
+                            }
+                            nsp()
+                            Text("SCP-008 samples have been deemed Class V extreme biological hazards, and all related protocols apply. Incineration and irradiation measures will be deployed in the event of political or military action which may result in the facility being dismantled; a power failure; or zero communications from operatives or outside channels during any given eight hour period.")
+                            nsp()
+                            Text("The quarantine period for operatives leaving the facility is four months. If a breach has occurred, incineration and irradiation measures shall be deployed. It should be the policy of all G2 sites to not prepare an evacuation procedure.")
+                            Divider()
+                        }
+                        Group {
+                            HStack {
+                                Text("Description:").bold()
+                                Spacer()
+                            }
+                            nsp()
+                            Text("SCP-008 is a complex prion, samples of which are stored in each of the known G2 sites. Research into SCP-008 is highly classified and primarily aimed at preventing research which may lead to the synthesis of SCP-008 in the distant future. Traits of the SCP-008 prion include:")
+                            nsp()
+                            Group {
+                                HStack {
+                                    Text("- 100% infectiousness.")
+                                    Spacer()
+                                }
+                                nsp()
+                                HStack {
+                                    Text("- 100% lethality.")
+                                    Spacer()
+                                }
+                                nsp()
+                                HStack {
+                                    Text("- Transmission through exposed mucous membranes and all bodily fluids.")
+                                    Spacer()
+                                }
+                                nsp()
+                                HStack {
+                                    Text("- Not airborne or waterborne.")
+                                    Spacer()
+                                }
+                            }.padding(.leading,13)
+                            Group {
+                                nsp()
+                                Text("Symptoms of infection with SCP-008 manifest no more than three hours after exposure, and include:")
+                                nsp()
+                            }
+                            Group {
+                                Group {
+                                    HStack {
+                                        Text("- Flu-like symptoms with high fever, plus severe dementia in later stages.")
+                                        Spacer()
+                                    }
+                                    nsp()
+                                    HStack {
+                                        Text("- Coma onset approximately 20 hours after first symptoms appear and 12 hours after noticeable dementia. Coma onset will be considered onset of death.")
+                                        Spacer()
+                                    }
+                                    nsp()
+                                    HStack {
+                                        Text("- A period of sporadic cellular necrosis occurs which comes to resemble gangrene. Surviving tissue assumes its original function and is highly resilient.")
+                                        Spacer()
+                                    }
+                                    nsp()
+                                    HStack {
+                                        Text("- Red blood cells greatly increase oxygen storage capacity, resulting in slower blood flow and increased muscle endurance and strength.")
+                                        Spacer()
+                                    }
+                                    nsp()
+                                    HStack {
+                                        Text("- Nervous and muscular systems are unaffected by total organ failure for several hours.")
+                                        Spacer()
+                                    }
+                                    nsp()
+                                }.padding(.leading,13)
+                                Group {
+                                    HStack {
+                                        Text("- Metabolism may decrease to extremely low levels, allowing subject to survive for over 10 years without nutrition.")
+                                        Spacer()
+                                    }
+                                    nsp()
+                                    HStack {
+                                        Text("- High blood viscosity results in negligible blood flow from gunshot, puncture, and slashing injuries.")
+                                        Spacer()
+                                    }
+                                    nsp()
+                                    HStack {
+                                        Text("- Conditioned behavior, motor controls, and instinctive behavioral mechanisms are damaged, and cognitive abilities are severely retarded and erratic. Animals experience excessive brain necrosis and are inactive.")
+                                        Spacer()
+                                    }
+                                    nsp()
+                                    HStack {
+                                        Text("- Subject can adapt to its damaged nervous systems but is limited to basic physical activities, including standing up, balancing on two legs, walking, biting, grabbing, and crawling. Subject will energetically move towards sights, sounds, and smells it associates with living humans. Subject will attempt to ingest living humans if physical contact is made.").fixedSize(horizontal: false, vertical: true)
+                                        Spacer()
+                                    }
+                                    nsp()
+                                    HStack {
+                                        Text("- Neutralizing fully-infected subjects requires significant cranial trauma.")
+                                        Spacer()
+                                    }
+                                    nsp()
+                                }.padding(.leading,13)
+                            }
+                            Group {
+                                Text("There is strong evidence to suggest SCP-008 itself did not form naturally on Earth, since variants of similar complexity would have displaced much of the ecosystem. In 1959, a short collaborative effort with the USSR to locate G2 sites and eliminate SCP-008 was negotiated following their discovery. The status of SCP-008 in Russian custody since collaboration ended is unknown.").fixedSize(horizontal: false, vertical: true)
+                                Divider()
+                                HStack {
+                                    Text("Addendum 008-1:").bold()
+                                    Spacer()
+                                }
+                                Text("SCP-500 has been found to be able to completely cure SCP-008 even in the advanced stages of the disease.")
+                                Divider()
+                                Text("SCP-008 was created by Lee Byron on the SCP Wiki (https://scp-wiki.net/scp-008)")
+                                nsp()
+                                Text("The documentation file in the App's database was last updated January 31, 2020")
+                                nsp()
+                            }
+                        }
+                    }
                 }
             }.padding(.leading,5)
             .padding(.trailing,5)
@@ -838,6 +1019,8 @@ struct Series1List_Previews: PreviewProvider {
         Series1List()
     }
 }
+
+
 
 struct SCP002_Previews: PreviewProvider {
     static var previews: some View {

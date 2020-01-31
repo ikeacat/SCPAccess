@@ -50,6 +50,15 @@ struct EuclidView: View {
                             .foregroundColor(Color("Adaptive"))
                     }
                 }
+                NavigationLink(destination:SCP008()) {
+                    HStack {
+                        Text("SCP-008")
+                        quickS(nil,five)
+                        Text("Zombie Plague")
+                            .foregroundColor(Color("Adaptive"))
+                            .italic()
+                    }
+                }
             }
         }
     }
