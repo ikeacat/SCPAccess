@@ -178,6 +178,7 @@ struct SCP002: View {
                         }
                     }.padding().border(Color("Adaptive"), width:4)
                 Group {
+                    Divider()
                     Text("SCP-002 is credited to The Administrator (author unknown).")
                     nsp()
                     Text("The documentation file in the App's database was last updated January 17, 2020")
@@ -212,7 +213,7 @@ struct SCP003: View {
                         Text("Euclid")
                         Spacer()
                     }
-                    nsp()
+                    Divider()
                 }
                 Group { // Special Containment Procedures
                     HStack {
@@ -228,10 +229,9 @@ struct SCP003: View {
                     Text("Personnel who enter SCP-003's containment area must first be examined for body parasites of Category IV or higher complexity, and sterilized if such organisms are present. All personnel who have come in physical contact with SCP-003-1 are to immediately report for sterilization afterwards.")
                     nsp()
                     Text("SCP-003-1 must not be removed from SCP-003-2 except in case of emergency procedures detailed above. Any significant change in SCP-003-2's rune activity (including pattern, frequency, or color) should be reported within three (3) hours of occurrence. Cessation of rune activity must be reported immediately. SCP-003-2 must be supplied with power via the source designated Generator 003-IX at all times.")
-                    nsp()
+                    Divider()
                 }
                 Group { // Desc
-                    Divider()
                     HStack {
                         Text("Description:")
                             .bold()
@@ -271,7 +271,7 @@ struct SCP003: View {
                             Text("During each of SCP-003-1's growth stages, SCP-003-2 releases bursts of radiation that temporarily inhibit SCP-003-1's growth, or reverse this growth when the temperature of SCP-003-1 rises above 100°C. Similar radiation emissions have been replicated or recorded via other anomalous means.")
                             nsp()
                             Text("SCP-003-1's biology has been the subject of extensive study. Significant elements have been identified similar to SCP-[REDACTED], SCP-1512, and SCP-2756, the latter two of which have no further confirmed connection with SCP-003-1 and no known connection with each other, and none of which are fully understood (technically, even less understood than SCP-003, thanks to the extensive cross-disciplinary research on the SCP-003 objects). To date, no convincing analysis has been put forward which satisfactorily explains SCP-003-1's connection to these SCP objects or others, nor its connection to modern technology beyond appearance (and potential mimicry via unknown mechanism).").fixedSize(horizontal: false, vertical: true)
-                            nsp()
+                            Divider()
                         }
                     }
                 }
@@ -321,7 +321,7 @@ struct SCP003: View {
                             Text("All nine members of M03-Gloria affected by SCP-003-1 were afterwards found to be physically unharmed, with no residual effects besides psychological trauma. The converted materials of SCP-003's former containment area did not dissolve and are now under analysis.")
                             nsp()
                         }
-                        nsp()
+                        Divider()
                         Text("SCP-003 was created by DrEverettMan on the SCP Wiki (https://scp-wiki.net/scp-003)")
                         nsp()
                         Text("The documentation file in the App's database was last updated January 17, 2020")
@@ -558,11 +558,13 @@ struct SCP004: View {
                                 
                             }
                             Group {
+                                Divider()
                                 HStack {
                                     Text("Appendix B: Additional Information")
                                     .bold()
                                     Spacer()
                                 }
+                                nsp()
                                 Group {
                                     HStack {
                                         Text("Item #:")
@@ -599,7 +601,7 @@ struct SCP004: View {
                                     }
                                 }
                                 Group {
-                                    nsp()
+                                    Divider()
                                     Text("SCP-004 is credited to Anonymous (97.93.83.x) on the SCP Wiki (https://scp-wiki.net/scp-004)")
                                     nsp()
                                     Text("The documentation file in the App's database was last updated January 17, 2020")
@@ -645,7 +647,7 @@ struct SCP005: View {
                     }
                     nsp()
                     Text("SCP-005 poses no immediate risk in any direct sense. Even so, its unique functions require special measures be taken to restrict access and manipulation of the object. Approval of at least one (1) Level 4 personnel is required for the removal of the object from its containment area.")
-                    nsp()
+                    Divider()
                     // Description
                     HStack {
                         Text("Description:").bold()
@@ -663,7 +665,7 @@ struct SCP005: View {
                     }
                     nsp()
                     Text("SCP-005 may be used as a replacement for lost security passes, but only under the supervision of at least one (1) Level 4 personnel. SCP-005 may not be used for vending machine repairs, opening lockers, or for any personnel's spare home key. Removal of the object from the compound will result in immediate termination.")
-                    nsp()
+                    Divider()
                     HStack {
                         Text("Appendix A:").bold()
                         Spacer()
