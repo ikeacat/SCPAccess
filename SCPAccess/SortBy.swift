@@ -59,6 +59,15 @@ struct EuclidView: View {
                             .italic()
                     }
                 }
+                NavigationLink(destination:SCP009()) {
+                    HStack {
+                        Text("SCP-009")
+                        quickS(nil,five)
+                        Text("Red Ice")
+                            .foregroundColor(Color("Adaptive"))
+                            .italic()
+                    }
+                }
             }
         }
     }

@@ -94,6 +94,15 @@ struct Series1List: View {
                                     .italic()
                             }
                         }
+                        NavigationLink(destination:SCP009()) {
+                            HStack {
+                                Text("SCP-009")
+                                quickS(nil,five)
+                                Text("Red Ice")
+                                    .foregroundColor(Color("Adaptive"))
+                                    .italic()
+                            }
+                        }
                     }
                 }
             }
@@ -1007,6 +1016,146 @@ struct SCP008: View {
                             }
                         }
                     }
+                }
+            }.padding(.leading,5)
+            .padding(.trailing,5)
+        }
+    }
+}
+
+struct SCP009: View {
+    var body: some View {
+        ScrollView {
+            VStack {
+                Group {
+                    Header()
+                    Image("SCP009").resizable().frame(width:400,height:400)
+                    Text("SCP-009 prior to recovery").font(.caption)
+                    Divider()
+                    HStack {
+                        Text("Item #:").bold()
+                        Text("SCP-009")
+                        Spacer()
+                    }
+                    nsp()
+                    HStack {
+                        Text("Object Class:").bold()
+                        Text("Euclid")
+                        Spacer()
+                    }
+                    Divider()
+                }
+                Group {
+                    HStack {
+                        Text("Special Containment Procedures:").bold()
+                        Spacer()
+                    }
+                    nsp()
+                    Text("Object is to be contained within a sealed storage tank of heat-resistant alloy with dimensions not less than 2m x 2m x 2m.")
+                    nsp()
+                    Text("Under no circumstances should SCP-009 be exposed to temperatures in excess of 0°C when not undergoing testing, and no water-based solutions shall be allowed within 30 meters of the object's containment area. Object's chamber is to be fitted with temperature sensors which must be monitored at all times, and is to be kept refrigerated by no fewer than three (3) redundant cooling units. Any malfunction of sensors, or of coolant systems, is to be reported and repaired immediately. If at any time the temperature in the containment area climbs above -5°C, the chamber is to be locked down and flooded with coolant until temperatures return to safe levels (-30°C to -25°C).").fixedSize(horizontal: false, vertical: true)
+                    nsp()
+                    Text("Containment area is to be kept in total vacuum during testing, and personnel interacting with SCP-009 must wear full environmental protection gear. Following testing, all equipment, personnel, and other materials must undergo dehydration procedures and be quarantined for no less than 12 hours. Any moisture found displaying properties of SCP-009 is to be quarantined and added to the containment area as soon as possible. Living organisms found to be contaminated by SCP-009 are to be terminated by chemical dessication and extracted molecules of SCP-009 added to containment.").fixedSize(horizontal: false, vertical: true)
+                    Divider()
+                }
+                Group {
+                    HStack {
+                        Text("Description:").bold()
+                        Spacer()
+                    }
+                    nsp()
+                    Group {
+                        Text("SCP-009 is approximately [REDACTED] liters of a substance which superficially resembles distilled water (H2O), except with a distinct bright red hue. This red hue is discernible in all phases, and serves as the most expedient method of identifying contaminated matter before its anomalous properties manifest. In contrast to mundane water, SCP-009 assumes a liquid phase at temperatures between -100°C and 0°C, and a solid state above those temperatures. At temperatures below -100°C, SCP-009 vaporizes into a gaseous phase similar to steam.").fixedSize(horizontal: false, vertical: true)
+                        nsp()
+                        Text("Examinations of the atomic structure of SCP-009 have proved inconclusive. The substance appears to be identical to normal water molecules, with the exception of [REDACTED] in contrast to standard laws of enthalpy. Dr. [REDACTED], Site [REDACTED]'s resident expert on Xenospatial Physics suggests that SCP-009 may originate in a universe with alternate physical laws.").fixedSize(horizontal: false, vertical: true)
+                        nsp()
+                        Text("The most hazardous property of SCP-009, however, is its ability to contaminate normal H2O. When in contact with any aqueous solution, SCP-009 will, through unknown mechanisms, transfer its anomalous properties to other objects and creatures. Testing has shown it capable of assimilating ice, steam, tea, fruit juice, seawater, blood, and [DATA EXPUNGED]. The time it takes for this process to occur varies depending on temperature and the exact chemical composition of affected matter, and had been observed as taking between 3 minutes and [REDACTED] hours.").fixedSize(horizontal: false, vertical: true)
+                        nsp()
+                        Text("Experiments on D-Class personnel have illustrated the process of conversion by the substance, which has been found to follow a consistent pattern:")
+                        nsp()
+                        Text("1. Initial Exposure: Subject is exposed to SCP-009, and it begins assimilating any moisture present on the exposed surface. Creatures in this stage do not commonly notice any unusual symptoms except for a slight warming sensation.").fixedSize(horizontal: false, vertical: true)
+                        nsp()
+                    }
+                    Group {
+                        Text("2. Surface Conversion: Frost begins to form on the exposed area as the heat produced by the subject and SCP-009 itself raises its temperature above 0°C. This stage can take anywhere from one (1) minute to [REDACTED] hours, during which time subjects begin to feel [REDACTED] crystals from the epidermis.").fixedSize(horizontal: false, vertical: true).multilineTextAlignment(.leading)
+                        nsp()
+                        Text("3. Deep Tissue Conversion: Exponential increase in temperature of SCP-009 causes runaway reaction throughout subject's body, resulting in [REDACTED]. Actual blood loss is minimal due to ice crystals [REDACTED], allowing subjects to remain alive and conscious for up to [REDACTED] hours.").fixedSize(horizontal: false, vertical: true).multilineTextAlignment(.leading)
+                        nsp()
+                        HStack {
+                            Text("4. [DATA EXPUNGED]")
+                            Spacer()
+                        }
+                        nsp()
+                        HStack {
+                            Text("Testing on D-Class personnel was discontinued as of 4/23/20[REDACTED].")
+                            Spacer()
+                        }
+                        Divider()
+                    }
+                    Group {
+                        Group {
+                            HStack {
+                                Text("Addendum Circumstances of Retrieval:").bold()
+                                Spacer()
+                            }
+                            nsp()
+                            Text("Subject was found in [REDACTED], Alaska, on 11/05/19[REDACTED]. The Foundation became involved after reports were obtained from the native [REDACTED] Tribe, who came across the mangled bodies of a team of seal hunters which had apparently been ship-wrecked [REDACTED] kilometers from the village.")
+                            nsp()
+                            Text("After initial report and retrieval of specimens, it was confirmed that the arachnoid entity found by MTF-B7 (see attached file) was indeed a previously unknown instance of SCP-3023. Investigation has revealed the instance originated in [REDACTED] as a result of [DATA EXPUNGED].")
+                            nsp()
+                            Text("Origin of SCP-009 is currently unknown. Investigation into similar events or materials in the area is ongoing. Evidence at the scene suggests [REDACTED], possibly involving SCP-[REDACTED].")
+                            Divider()
+                        }
+                        Group {
+                            HStack {
+                                Text("Addendum 11/09/19[REDACTED]:").bold()
+                                Spacer()
+                            }
+                            nsp()
+                            Text("After initial report and retrieval of specimens, it was confirmed that the arachnoid entity found by MTF-B7 (see attached file) was indeed a previously unknown instance of SCP-3023. Investigation has revealed the instance originated in [REDACTED] as a result of [DATA EXPUNGED].")
+                            Divider()
+                        }
+                        Group {
+                            HStack {
+                                Text("Addendum 12/06/19[REDACTED]:").bold()
+                                Spacer()
+                            }
+                            nsp()
+                            Text("After repeated inquiries, it should be noted that the portion of coastline upon which the initial victims were found was barren rock approximately [REDACTED] meters from the seashore, and was sufficiently dry and cold to prevent significant contamination of the surrounding area. Had the site been closer to the water, there is little doubt an extinction-level event would have ensued.")
+                            nsp()
+                            Text("Consideration of upgrading SCP-009 to Keter class under review.")
+                            Divider()
+                        }
+                        Group {
+                            HStack {
+                                Text("Addendum 12/16/20[REDACTED]:").bold()
+                                Spacer()
+                            }
+                            nsp()
+                            Text("Super-cooling of SCP-009 for the purposes of experimentation is disallowed until further notice. Personnel are advised that liquid nitrogen is only to be used on the subject in controlled amounts, and only until temperatures have reached acceptable levels.")
+                            nsp()
+                            Text("Related note: Possible application of SCP-009 in cold fusion research pending evaluation.")
+                            Divider()
+                        }
+                        Group {
+                            HStack {
+                                Text("Memo from O-5 Command 1/09/20[REDACTED]:").bold()
+                                Spacer()
+                            }
+                            nsp()
+                            Text("We've decided to keep this thing Euclid for now. We understand the concerns raised, but as long as you keep the power on and nobody goes near its containment area, there shouldn't be a problem. That's why we're keeping it in Site [REDACTED], after all.")
+                            nsp()
+                            Text("As for the cold fusion research, we're putting a pin in that for now. Frankly, we don't have it in the budget for another SNAFU like Site [REDACTED]. The salvage team still hasn't found Dr. [REDACTED]'s [REDACTED]")
+                            Divider()
+                        }
+                    }
+                    Group {
+                        Text("SCP-009 was created by a deleted account. So, its author unknown. Made on the SCP Wiki (https://scp-wiki.net/scp-009)")
+                        nsp()
+                        Text("The documentation file in the App's database was last updated January 31, 2020")
+                        nsp()
+                    }
+                    Divider()
                 }
             }.padding(.leading,5)
             .padding(.trailing,5)
