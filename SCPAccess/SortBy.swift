@@ -41,6 +41,15 @@ struct EuclidView: View {
                             .foregroundColor(Color("Adaptive"))
                     }
                 }
+                NavigationLink(destination:SCP007()) {
+                    HStack {
+                        Text("SCP-007")
+                        quickS(nil,five)
+                        Text("Abdominal Planet")
+                            .italic()
+                            .foregroundColor(Color("Adaptive"))
+                    }
+                }
             }
         }
     }
@@ -64,7 +73,7 @@ struct SafeView: View {
                     }
                     NavigationLink(destination:SCP006()) {
                         HStack {
-                            Text("SCP-005")
+                            Text("SCP-006")
                             quickS(nil,five)
                             Text("Fountain of Youth")
                                 .italic()

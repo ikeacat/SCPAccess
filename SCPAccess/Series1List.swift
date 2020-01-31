@@ -75,6 +75,15 @@ struct Series1List: View {
                                 .foregroundColor(Color("Adaptive"))
                         }
                     }
+                    NavigationLink(destination:SCP007()) {
+                        HStack {
+                            Text("SCP-007")
+                            quickS(nil,five)
+                            Text("Abdominal Planet")
+                                .foregroundColor(Color("Adaptive"))
+                                .italic()
+                        }
+                    }
                 }
             }
         }
@@ -764,6 +773,62 @@ struct SCP006: View {
         }
     }
 }
+}
+
+struct SCP007: View {
+    var body: some View {
+        ScrollView {
+            VStack {
+                Group {
+                    Header()
+                    HStack {
+                        Text("Item #:").bold()
+                        Text("SCP-007")
+                        Spacer()
+                    }
+                    nsp()
+                    HStack {
+                        Text("Object Class:").bold()
+                        Text("Euclid")
+                        Spacer()
+                    }
+                    nsp()
+                    Divider()
+                }
+                Group {
+                    HStack {
+                        Text("Special Containment Procedures:").bold()
+                        Spacer()
+                    }
+                    nsp()
+                    Text("SCP-007 is to be contained in a sealed room measuring 10 m on each side. Room is to be furnished comfortably as a living area, along with whatever items are requested by [REDACTED] (hereafter referred to as Subject), given that providing Subject with requested items would not compromise security. Subject is not to be allowed to leave the room, and is to be detained with force if necessary.")
+                    nsp()
+                }
+                Group {
+                    Divider()
+                    HStack {
+                        Text("Description:").bold()
+                        Spacer()
+                    }
+                    nsp()
+                    Text("SCP-007 is located within a cavity in the abdomen of Subject. Subject is a Caucasian male, physically approximately 25 years of age (subject claims to be 28) and 176 cm in height. Most of Subject's abdomen (muscles, skin, and organs) is absent, though Subject does not appear to suffer because of this. Instead of normal flesh, a sphere composed of soil and water is present, though it does not actually come into contact with Subject's body at any point. The sphere appears to be, in most respects, a miniature near-duplicate of the Earth, approximately 60 cm in diameter, although continental alignment is not consistent with that of any alignment known in Earth's history. The sphere has its own weather patterns and negligible gravitational pull, in addition to microscopic organisms somewhat resembling those of modern-day Earth inhabiting it. Two intelligent species have been observed, though contact and communication with either has yet to be made. Technology levels of observed species must be checked at least once a week and, as of [REDACTED]/[REDACTED], are approximately equal to that of 15th-Century Earth.").fixedSize(horizontal: false, vertical: true)
+                    nsp()
+                    Text("Subject claims to be named [REDACTED], but no records of such a person can be found. Subject does not require food or water, and while he has been observed consuming both, what happens to such substances after being swallowed is unknown. Subject is intelligent (IQ has been measured at 128) and amiable, and regards the planet in his abdomen as a minor curiosity about his body. Subject seems to experience no stress about his unusual condition. When questioned about planet's origins, Subject replied, \"I just woke up one day, and there it was. I don't have any idea how it got there.\" Subject has provided a Social Security number and driver's license number and requested that they be checked against known records. When checked, it was discovered that neither had yet been allocated.").fixedSize(horizontal: false, vertical: true)
+                    nsp()
+                    Text("Dr. [REDACTED] has a weekly chess game with Subject, during which Subject's mental health is evaluated. Dr. [REDACTED] reports that Subject does not seem to mind the restricted living environment, and has yet to attempt to escape or show signs of violence or mental illness, though he has repeatedly requested a computer with an internet connection. It is recommended that this not be provided as it may be used to compromise security.")
+                    nsp()
+                }
+                Group {
+                    Divider()
+                    Text("SCP-007 was created by xthevilecorruptor on the SCP Wiki (https://scp-wiki.net/scp-007")
+                    nsp()
+                    Text("The documentation file in the App's database was last updated January 31, 2020")
+                    nsp()
+                }
+            }.padding(.leading,5)
+            .padding(.trailing,5)
+        }
+    }
 }
 
 struct Series1List_Previews: PreviewProvider {

@@ -45,15 +45,17 @@ struct credits: View {
             }
             Divider()
             VStack {
-                Text("Individual SCP Credits")
-                    .font(.largeTitle)
-                Divider()
-                Text("Each of these credits will also be found on the individual SCP page. Credits go in order of number (Starts with 002)")
-                nsp()
-                Text("Credits are from scp-wiki.net, the official wiki.")
-                nsp()
-                nsp()
-                nsp()
+                Group {
+                    Text("Individual SCP Credits")
+                        .font(.largeTitle)
+                    Divider()
+                    Text("Each of these credits will also be found on the individual SCP page. Credits go in order of number (Starts with 002)")
+                    nsp()
+                    Text("Credits are from scp-wiki.net, the official wiki.")
+                    nsp()
+                    nsp()
+                    nsp()
+                }
                 Group {
                     Text("SCP-002: author unknown (Credited as The Administrator) (https://scp-wiki.net/scp-002)")
                     nsp()
@@ -64,6 +66,10 @@ struct credits: View {
                     Text("SCP-005: author unknown (Account Deleted) (https://scp-wiki.net/scp-005")
                     nsp()
                     Text("SCP-006: author Dr_Schubert (https://scp-wiki.net/scp-006)")
+                    nsp()
+                }
+                Group {
+                    Text("SCP-007: author xthevilecorruptor (https://scp-wiki.net/scp-007")
                 }
             }
         }
