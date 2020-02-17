@@ -112,6 +112,15 @@ struct Series1List: View {
                                     .italic()
                             }
                         }
+                        NavigationLink(destination:SCP011()) {
+                            HStack {
+                                Text("SCP-011")
+                                quickS(nil,five)
+                                Text("Sentient Civil War Memorial Statue")
+                                    .foregroundColor(Color("Adaptive"))
+                                    .italic()
+                            }
+                        }
                     }
                 }
             }
@@ -651,6 +660,11 @@ struct SCP005: View {
             VStack {
                 Group { // Image, Item Num, & Class
                     Header()
+                    Group {
+                        Text("SCP-005")
+                            .font(.system(size: 50))
+                        Divider()
+                    }
                     Image("SCP005")
                     Text("A close up of SCP-005").font(.caption)
                     Divider()
@@ -744,6 +758,11 @@ struct SCP006: View {
                                 Text("Security Credentials Valid; Showing Documentation.")
                                     .font(.title)
                                 Divider()
+                                Group {
+                                    Text("SCP-006")
+                                        .font(.system(size: 50))
+                                    Divider()
+                                }
                                 HStack {
                                     Text("Item #:").bold()
                                     Text("SCP-006")
@@ -812,6 +831,11 @@ struct SCP007: View {
             VStack {
                 Group {
                     Header()
+                    Group {
+                        Text("SCP-007")
+                            .font(.system(size: 50))
+                        Divider()
+                    }
                     HStack {
                         Text("Item #:").bold()
                         Text("SCP-007")
@@ -892,6 +916,11 @@ struct SCP008: View {
                 if openDocs == true {
                     VStack {
                         Group {
+                            Group {
+                                Text("SCP-002")
+                                    .font(.system(size: 50))
+                                Divider()
+                            }
                             Image("SCP008").resizable().frame(width:400,height:400).padding(.top,5)
                             Text("Ribbon diagram illustrating tertiary structure of SCP-008. Primary amino acid sequence information has been redacted.").font(.caption).multilineTextAlignment(.center)
                             Divider()
@@ -1038,6 +1067,11 @@ struct SCP009: View {
             VStack {
                 Group {
                     Header()
+                    Group {
+                        Text("SCP-009")
+                            .font(.system(size: 50))
+                        Divider()
+                    }
                     Image("SCP009").resizable().frame(width:400,height:400)
                     Text("SCP-009 prior to recovery").font(.caption)
                     Divider()
@@ -1178,6 +1212,11 @@ struct SCP010: View {
             VStack {
                 Group {
                     Header()
+                    Group {
+                        Text("SCP-010")
+                            .font(.system(size: 50))
+                        Divider()
+                    }
                     HStack {
                         Text("Item #:").bold()
                         Text("SCP-010")
@@ -1275,6 +1314,37 @@ struct SCP010: View {
                 }
             }.padding(.leading,5)
             .padding(.trailing,5)
+        }
+    }
+}
+
+struct SCP011: View {
+    var body: some View {
+        ScrollView {
+            VStack {
+                Group {
+                    Header()
+                    Group {
+                        Text("SCP-011")
+                            .font(.system(size: 50))
+                        Divider()
+                    }
+                    Image("SCP011")
+                    HStack {
+                        Text("Item #:").bold()
+                        Text("SCP-011")
+                        nsp()
+                    }
+                    HStack {
+                        Text("Object Class:").bold()
+                        Text("Safe")
+                    }
+                    Divider()
+                }
+                Group {
+                    Text("")
+                }
+            }
         }
     }
 }

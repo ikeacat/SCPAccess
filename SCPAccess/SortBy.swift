@@ -107,6 +107,15 @@ struct SafeView: View {
                                 .italic()
                         }
                     }
+                    NavigationLink(destination:SCP011()) {
+                        HStack {
+                            Text("SCP-011")
+                            quickS(nil,five)
+                            Text("Sentient Civil War Memorial Statue")
+                                .foregroundColor(Color("Adaptive"))
+                                .italic()
+                        }
+                    }
                 }
             }
         }
