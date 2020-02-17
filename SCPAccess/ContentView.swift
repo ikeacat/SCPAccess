@@ -32,6 +32,8 @@ struct ContentView: View {
                         .padding(4)
                         .foregroundColor(.purple)
                 }
+                nsp()
+                nsp()
             }
         }
     }
@@ -59,7 +61,7 @@ struct HomeMenu: View {
     }
 }
 
-struct SeriesListFull: View {
+struct SeriesListFull: View { // Link to when Series II is started.
     var body: some View {
         VStack {
             Header()
@@ -85,7 +87,7 @@ public func quickS(_ hsize:CGFloat?, _ wsize:CGFloat?) -> some View {
     else if(wsize == nil) {
         return Spacer().frame(maxHeight:hsize)
     } else {
-        return Spacer().frame(maxHeight:24000)
+        return Spacer().frame(maxWidth:wsize, maxHeight:hsize)
     }
 }
 

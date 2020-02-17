@@ -98,6 +98,15 @@ struct SafeView: View {
                                 .foregroundColor(Color("Adaptive"))
                         }
                     }
+                    NavigationLink(destination:SCP010()) {
+                        HStack {
+                            Text("SCP-010")
+                            quickS(nil,five)
+                            Text("Collars of Control")
+                                .foregroundColor(Color("Adaptive"))
+                                .italic()
+                        }
+                    }
                 }
             }
         }

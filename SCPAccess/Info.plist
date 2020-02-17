@@ -50,5 +50,7 @@
 	</array>
 	<key>UISupportedInterfaceOrientations~ipad</key>
 	<array/>
+	<key>GADApplicationIdentifier</key>
+	<string>ca-app-pub-9205845055431008~8036831914</string>
 </dict>
 </plist>
