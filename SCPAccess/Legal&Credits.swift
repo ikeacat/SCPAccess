@@ -57,28 +57,33 @@ struct credits: View {
                     nsp()
                 }
                 Group {
-                    Text("SCP-002: author unknown (Credited as The Administrator) (https://scp-wiki.net/scp-002)")
-                    nsp()
-                    Text("SCP-003: author DrEverettMan (https://scp-wiki.net/scp-003)")
-                    nsp()
-                    Text("SCP-004: author unknown (Anonymous) (https://scp-wiki.net/scp-004)")
-                    nsp()
-                    Text("SCP-005: author unknown (Account Deleted) (https://scp-wiki.net/scp-005)")
-                    nsp()
-                    Text("SCP-006: author Dr_Schubert (https://scp-wiki.net/scp-006)")
-                    nsp()
-                }
-                Group {
-                    Text("SCP-007: author xthevilecorruptor (https://scp-wiki.net/scp-007)")
-                    nsp()
-                    Text("SCP-008: author Lee Byron (https://scp-wiki.net/scp-008)")
-                    nsp()
-                    Text("SCP-009: author unknown (Account Deleted) (https://scp-wiki.net/scp-009)")
-                    nsp()
-                    Text("SCP-010: author Le Blue Dude (https://scp-wiki.net/scp-010)")
-                    nsp()
-                    Text("SCP-011: author Kain Pathos Crow (https://scp-wiki.net/scp-011)")
-                    nsp()
+                    Group {
+                        Text("SCP-002: author unknown (Credited as The Administrator) (https://scp-wiki.net/scp-002)")
+                        nsp()
+                        Text("SCP-003: author DrEverettMan (https://scp-wiki.net/scp-003)")
+                        nsp()
+                        Text("SCP-004: author unknown (Anonymous) (https://scp-wiki.net/scp-004)")
+                        nsp()
+                        Text("SCP-005: author unknown (Account Deleted) (https://scp-wiki.net/scp-005)")
+                        nsp()
+                        Text("SCP-006: author Dr_Schubert (https://scp-wiki.net/scp-006)")
+                        nsp()
+                    }
+                    Group {
+                        Text("SCP-007: author xthevilecorruptor (https://scp-wiki.net/scp-007)")
+                        nsp()
+                        Text("SCP-008: author Lee Byron (https://scp-wiki.net/scp-008)")
+                        nsp()
+                        Text("SCP-009: author unknown (Account Deleted) (https://scp-wiki.net/scp-009)")
+                        nsp()
+                        Text("SCP-010: author Le Blue Dude (https://scp-wiki.net/scp-010)")
+                        nsp()
+                        Text("SCP-011: author Kain Pathos Crow (https://scp-wiki.net/scp-011)")
+                        nsp()
+                    }
+                    Group {
+                        Text("SCP-012: author xthevilecorruptor (https://scp-wiki.net/scp-012")
+                    }
                 }
             }
         }
