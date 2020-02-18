@@ -17,12 +17,7 @@
 		102F197923C75325008A6697 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 102F197723C75325008A6697 /* LaunchScreen.storyboard */; };
 		102F198323C753BC008A6697 /* Header.swift in Sources */ = {isa = PBXBuildFile; fileRef = 102F198223C753BC008A6697 /* Header.swift */; };
 		104F938323D2497900630755 /* SortBy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 104F938223D2497800630755 /* SortBy.swift */; };
-		10800B0A23E7C8480070D83C /* admobid.txt in Resources */ = {isa = PBXBuildFile; fileRef = 10800B0923E7C8480070D83C /* admobid.txt */; };
 		10800B0C23E7C98C0070D83C /* SwiftUI_Ad_Banner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10800B0B23E7C98C0070D83C /* SwiftUI_Ad_Banner.swift */; };
-		10C5A83423E7D19C003C32F2 /* GoogleMobileAds.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 10C5A83323E7D19C003C32F2 /* GoogleMobileAds.framework */; };
-		10C5A83723E7D25B003C32F2 /* GoogleUtilities.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 10C5A83523E7D259003C32F2 /* GoogleUtilities.framework */; };
-		10C5A83823E7D25B003C32F2 /* GoogleAppMeasurement.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 10C5A83623E7D25B003C32F2 /* GoogleAppMeasurement.framework */; };
-		10C5A83A23E7D264003C32F2 /* nanopb.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 10C5A83923E7D264003C32F2 /* nanopb.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -51,7 +46,6 @@
 		102F197A23C75325008A6697 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		102F198223C753BC008A6697 /* Header.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Header.swift; sourceTree = "<group>"; };
 		104F938223D2497800630755 /* SortBy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SortBy.swift; sourceTree = "<group>"; };
-		10800B0923E7C8480070D83C /* admobid.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = admobid.txt; sourceTree = "<group>"; };
 		10800B0B23E7C98C0070D83C /* SwiftUI_Ad_Banner.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SwiftUI_Ad_Banner.swift; path = "../../../../../Downloads/af66902172cb5d595795b5633522fc71-54238733472265a42f3ccabdbe24d3fad152d13d/SwiftUI_Ad_Banner.swift"; sourceTree = "<group>"; };
 		10C5A83323E7D19C003C32F2 /* GoogleMobileAds.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = GoogleMobileAds.framework; sourceTree = "<group>"; };
 		10C5A83523E7D259003C32F2 /* GoogleUtilities.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = GoogleUtilities.framework; sourceTree = "<group>"; };
@@ -64,10 +58,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				10C5A83723E7D25B003C32F2 /* GoogleUtilities.framework in Frameworks */,
-				10C5A83423E7D19C003C32F2 /* GoogleMobileAds.framework in Frameworks */,
-				10C5A83A23E7D264003C32F2 /* nanopb.framework in Frameworks */,
-				10C5A83823E7D25B003C32F2 /* GoogleAppMeasurement.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -77,7 +67,6 @@
 		102F196023C752D6008A6697 = {
 			isa = PBXGroup;
 			children = (
-				10800B0923E7C8480070D83C /* admobid.txt */,
 				102F196B23C752D7008A6697 /* SCPAccess */,
 				102F196A23C752D7008A6697 /* Products */,
 				10800B0D23E7CD850070D83C /* Frameworks */,
@@ -190,7 +179,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				102F197923C75325008A6697 /* LaunchScreen.storyboard in Resources */,
-				10800B0A23E7C8480070D83C /* admobid.txt in Resources */,
 				102F197623C75325008A6697 /* Preview Assets.xcassets in Resources */,
 				102F197323C75325008A6697 /* Assets.xcassets in Resources */,
 			);

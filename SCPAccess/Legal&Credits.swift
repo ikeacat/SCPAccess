@@ -76,6 +76,9 @@ struct credits: View {
                     Text("SCP-009: author unknown (Account Deleted) (https://scp-wiki.net/scp-009)")
                     nsp()
                     Text("SCP-010: author Le Blue Dude (https://scp-wiki.net/scp-010)")
+                    nsp()
+                    Text("SCP-011: author Kain Pathos Crow (https://scp-wiki.net/scp-011)")
+                    nsp()
                 }
             }
         }

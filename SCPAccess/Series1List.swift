@@ -1330,21 +1330,66 @@ struct SCP011: View {
                         Divider()
                     }
                     Image("SCP011")
+                        .resizable()
+                        .frame(width:300,height:450)
+                    Divider()
                     HStack {
                         Text("Item #:").bold()
                         Text("SCP-011")
                         nsp()
                     }
+                    nsp()
                     HStack {
                         Text("Object Class:").bold()
                         Text("Safe")
+                        Spacer()
                     }
                     Divider()
                 }
                 Group {
-                    Text("")
+                    HStack {
+                        Text("Special Containment Procedures:").bold()
+                        Spacer()
+                    }
+                    nsp()
+                    Text("Item SCP-011 and the area surrounding it are to be cleaned once every day. For safety purposes, cleaning should start at least 30 minutes after sundown. Cleaning should always be performed by at least two (2) personnel, who are also advised to note anything unusual about the item or the debris cleaned up. In a situation where the item cannot be cleaned for more than two (2) days, local residents must be contacted and instructed not to approach the item.").fixedSize(horizontal: false, vertical: true)
+                    nsp()
+                    HStack {
+                        Text("[Containment procedures nullified 2004]")
+                        Spacer()
+                    }
+                    Divider()
                 }
-            }
+                Group {
+                    HStack {
+                        Text("Description:").bold()
+                        Spacer()
+                    }
+                    nsp()
+                    Text("SCP-011 is a Civil War memorial statue located in Woodstock, Vermont. The statue is the image of a young male soldier holding a musket at his side, and is carved out of granite quarried within the area. Occasionally, SCP-011 has been observed lifting its musket to the sky to fire at birds which attempt to land or defecate on it. Reports detail that its movements produce soft grinding sounds but do not cause it any structural failure. Oddly, the gunfire is very similar to that of a standard firearm, despite observations that the item only loads granite bullets and granite powder into the musket (which is also unharmed by the firing). In spite of its efforts, some fecal matter does manage to strike SCP-011, and it has reportedly become distressed when it has had a large amount of feces on it, on some rare occasions even firing at humans.").fixedSize(horizontal: false, vertical: true)
+                    Divider()
+                }
+                Group {
+                    HStack {
+                        Text("Addendum:").bold()
+                        Spacer()
+                    }
+                    nsp()
+                    VStack {
+                        HStack {
+                            Text("Timeline:").bold()
+                        }
+                        Text("3.12.1995 - Woodstock resident reports the statue's eyes moving, first sign of activity\n9.30.1995 - Statue shoots musket for the first time\n10.9.1995 - Statue begins shooting birds from the sky\n1.25.1996 - Registration as SCP-011, containment procedures begin\n4.14.1997 - SCP-011 observed moving casually and looking around\n5.3.2000 - After caretaker [REDACTED] jokingly shouts \"Good shot!\" to SCP-011, the item replies, \"Thank you,\" in a reportedly very human voice, first speech from statue\n10.22.2001 - SCP-011 has conversation with caretaker [REDACTED]\n2001 - Shooting of birds stops\n2.6.2002 - At the imploring of [REDACTED], SCP-011 steps down from its pedestal\n2003-2004 - SCP-011 reaches a human level of self-awareness\n11.10.2004 - Containment procedures dropped, custody of SCP-011 transferred to [REDACTED]\n5.17.2005 - [REDACTED] reports that SCP-011 is romantically attracted to her\n8.29.2006 - Most recent psych test reports an IQ of 133").fixedSize(horizontal: false, vertical: true)
+                    }.padding().border(Color("Adaptive"), width:4)
+                }
+                Group {
+                    Divider()
+                    Text("SCP-010 was created by Kain Pathos Crow on the SCP Wiki (https://scp-wiki.net/scp-011)")
+                    nsp()
+                    Text("The documentation file on the app's database was last updated on February 17, 2020.")
+                }
+            }.padding(.leading,5)
+            .padding(.trailing,5)
         }
     }
 }
