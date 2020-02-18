@@ -80,6 +80,14 @@ struct nsp: View {
     }
 }
 
+public func headerLTT(_ scpNum:String) -> some View {
+    return Group {
+        Text(scpNum)
+            .font(.system(size:50))
+        Divider()
+    }
+}
+
 public func quickS(_ hsize:CGFloat?, _ wsize:CGFloat?) -> some View {
     if(hsize == nil) {
         return Spacer().frame(maxWidth:wsize)
