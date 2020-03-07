@@ -83,6 +83,9 @@ struct credits: View {
                     }
                     Group {
                         Text("SCP-012: author xthevilecorruptor (https://scp-wiki.net/scp-012")
+                        nsp()
+                        Text("SCP-013: author Dexanote (https://scp-wiki.net/scp-013)")
+                        nsp()
                     }
                 }
             }
