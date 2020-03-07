@@ -132,6 +132,15 @@ struct Series1List: View {
                                     .foregroundColor(Color("Adaptive"))
                             }
                         }
+                        NavigationLink(destination:SCP013()) {
+                            HStack {
+                                Text("SCP-013")
+                                quickS(nil,five)
+                                Text("Blue Lady Cigarettes")
+                                    .italic()
+                                    .foregroundColor(Color("Adaptive"))
+                            }
+                        }
                     }
                 }
             }
@@ -1458,16 +1467,101 @@ struct SCP012: View {
     }
 }
 
-struct Series1List_Previews: PreviewProvider {
-    static var previews: some View {
-        Series1List()
+struct SCP013: View {
+    @State var openmeta = false
+    var body: some View {
+        ScrollView {
+            VStack {
+                Group {
+                    Header()
+                    Image("SCP013")
+                    Divider()
+                    headerLTT("SCP-013")
+                    itemnum("SCP-013")
+                    nsp()
+                    oc("Euclid")
+                    nsp()
+                    Divider()
+                }
+                Group {
+                    Group {
+                        spc()
+                        nsp()
+                        Text("SCP-013 are to be kept in a Secure Storage Vault at Site-66. Exposed subjects are to be monitored for differences between their symptoms. Exposed subjects are to be interviewed daily, and any changes in perception are to be logged.")
+                        Divider()
+                    }
+                    Group {
+                        desc()
+                        nsp()
+                        Group {
+                            Group {
+                                Text("SCP-013 is the collective designation of 242 cigarettes which display similar anomalies. The most common external detail between instances is the presence of the words \"Blue Lady\" hand-written on each cigarette in blue ink.")
+                                nsp()
+                                Text("Subjects who consume the contents of SCP-013 through inhalation will begin to perceive themselves as a specific unidentified woman. Subjects have described the woman to be aged between 25 and 35 years old, standing approximately 1.6 metres tall with an estimated weight of between 50 and 55 kg. Additional recurring details include cropped dark hair, blue eyes, and bright blue lipstick.")
+                                nsp()
+                                Text("Immediately after consuming an instance of SCP-013, subjects will gradually begin to perceive reflections of themselves as having the features of the woman, and will gradually perceive their bodies changing to reflect her appearance over the course of the following weeks. All changes are entirely mental; the subject’s body does not change outwardly, only their perception of themselves. These alterations are permanent, and cannot be reversed.")
+                                nsp()
+                                Text("SCP-013 was discovered after the suicide of an Ian Miles, packed in a large cardboard crate in his apartment. A cursory search of the apartment uncovered several hundred sketches of a figure strongly resembling the one perceived while under 013's effect. Miles' body had been found sitting at a desk, dead of a massive overdose and draped over a handwritten note, transcribed below.")
+                                nsp()
+                            }
+                            Group {
+                                Text("During the investigation of Miles' apartment, one civilian investigator became affected by 013's effect. An embedded Agent soon contacted the nearest Site; the subject, the artifact, and related evidence were extracted and contained.")
+                                nsp()
+                                Text("Currently, two hundred seventeen instances of SCP-013 cigarettes are contained at Bio-Site 66; twenty-five SCP-013 cigarettes are contained at Research Sector-09, pending future research into similar anomalous effects.")
+                                nsp()
+                            }
+                            Divider()
+                        }
+                        Group {
+                            HStack {
+                                Text("Addendum:").bold()
+                                Text("Below is the note which was acquired along with SCP-013.")
+                                Spacer()
+                            }
+                            nsp()
+                            VStack {
+                                Text("I see her everywhere. That sad blue lady.")
+                                nsp()
+                                Text("I feel like I know her but I can’t remember. I love her but I don’t know why. She’s so beautiful and sweet and clear but I don’t know any more.").fixedSize(horizontal: false, vertical: true)
+                                nsp()
+                                Text("her favourite flavour")
+                                nsp()
+                                Text("where did you go")
+                                nsp()
+                                Text("i miss you")
+                                nsp()
+                            }.padding().border(Color("Adaptive"), width:4)
+                        }
+                    }
+                    Group {
+                        if(openmeta == false) {
+                            Button(action:{
+                                withAnimation(.easeOut) {
+                                    self.openmeta = true
+                                }
+                            }) {
+                                if openmeta == false {
+                                    Text("View Credits & Metadata")
+                                } else {
+                                    EmptyView()
+                                }
+                            }
+                        }
+                        if(openmeta == true) {
+                            Text("SCP-013 was created by Dexanote on the SCP Wiki (https://scp-wiki.net/scp-013)")
+                            nsp()
+                            Text("The documentation file on the app's database was last updated on March 7, 2020. Matches wiki revision 37.")
+                        }
+                    }
+                }
+            }.padding(.leading,5)
+            .padding(.trailing,5)
+        }
     }
 }
 
-
-
-struct SCP002_Previews: PreviewProvider {
+struct WorkingOn_Previews: PreviewProvider {
     static var previews: some View {
-        SCP002()
+        SCP013()
     }
 }

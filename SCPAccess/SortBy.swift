@@ -123,6 +123,15 @@ struct SafeView: View {
                                 .italic()
                         }
                     }
+                    NavigationLink(destination:SCP013()) {
+                        HStack {
+                            Text("SCP-013")
+                            quickS(nil,five)
+                            Text("Blue Lady Cigarettes")
+                                .italic()
+                                .foregroundColor(Color("Adaptive"))
+                        }
+                    }
                 }
             }
         }
