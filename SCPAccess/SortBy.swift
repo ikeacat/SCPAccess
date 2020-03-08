@@ -75,6 +75,15 @@ struct EuclidView: View {
                         Text("A Bad Composition").italic().foregroundColor(Color("Adaptive"))
                     }
                 }
+                NavigationLink(destination:SCP015()) {
+                    HStack {
+                        Text("SCP-015")
+                        quickS(nil,five)
+                        Text("Pipe Nightmare")
+                            .italic()
+                            .foregroundColor(Color("Adaptive"))
+                    }
+                }
             }
         }
     }

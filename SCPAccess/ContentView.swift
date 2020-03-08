@@ -44,7 +44,7 @@ struct HomeMenu: View {
         VStack {
             Header()
             nsp()
-            Text("SCP's 002 - 014").font(.title)
+            Text("SCP's 002 - 015").font(.title)
             Divider()
             Group {
                 NavigationLink(destination: Series1List()) {

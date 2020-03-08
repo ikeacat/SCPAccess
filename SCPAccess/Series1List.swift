@@ -150,6 +150,15 @@ struct Series1List: View {
                                     .foregroundColor(Color("Adaptive"))
                             }
                         }
+                        NavigationLink(destination:SCP015()) {
+                            HStack {
+                                Text("SCP-015")
+                                quickS(nil,five)
+                                Text("Pipe Nightmare")
+                                    .italic()
+                                    .foregroundColor(Color("Adaptive"))
+                            }
+                        }
                     }
                 }
             }
@@ -1639,8 +1648,78 @@ struct SCP014: View {
     }
 }
 
+struct SCP015: View {
+    @State var openmeta = false
+    var body: some View {
+        ScrollView {
+            VStack {
+                Group {
+                    Header()
+                    Image("SCP015")
+                    Text("Interior View of SCP-015").font(.caption)
+                    Divider()
+                    headerLTT("SCP-015")
+                    itemnum("SCP-015")
+                    nsp()
+                    oc("Euclid")
+                    nsp()
+                    Divider()
+                }
+                Group {
+                    spc()
+                    nsp()
+                    Text("SCP-015 is impossible to move, and is contained on-site. A gap of at least 2 m (6 ft) needs to be maintained around the entire structure containing SCP-015 at all times, and no structures of any kind are to make contact with SCP-015's current containment structure. Exploration is permissible, but only in teams of three with full safety lines and GPS tracking. Any protrusions from SCP-015 must be capped and sealed immediately, with the new site recorded and logged.").fixedSize(horizontal: false, vertical: true)
+                    nsp()
+                    Text("No aggressive action is to be made within SCP-015. No hand or power tools are allowed anywhere inside SCP-015. No repairs or maintenance are to be made anywhere on SCP-015.").fixedSize(horizontal: false, vertical: true)
+                    Divider()
+                }
+                Group {
+                    desc()
+                    nsp()
+                    Text("SCP-015 is a mass of pipes, vents, boilers and other various plumbing apparatus completely filling a warehouse in [REDACTED]. The pipes appear to grow when not under observation, attempting to connect to nearby structures via sewer systems and underground plumbing. SCP-015 contains, at current estimate, over 190 kilometers (120 miles) of pipes, ranging in diameter from 2.5 cm to over 1 m. Some pipes appear new, while others are rusted and leaking. Pipes have been reported as being made of bone, wood, steel, pressed ash, human flesh, glass, and granite. No pipes composed of lead, PVC plastic, copper, or any other traditional material for the production of pipes have been found.").fixedSize(horizontal: false, vertical: true)
+                    nsp()
+                    VStack {
+                        HStack {
+                            Text("SCP-015 reacts to tools and aggression.").foregroundColor(.red).layoutPriority(1.0)
+                            Spacer()
+                        }
+                        Text("Any personnel acting violently, carrying tools, or attempting to damage or repair SCP-015 in any way, will trigger a reaction. Any pipes near the subject will burst, spraying on the subject for several seconds before the flow suddenly stops. Pipes have been reported containing oil, mercury, rats, a species of insect not yet identified, ground glass, sea water, entrails, and molten iron. Pipes will continue to burst around the subject until death or retreat.").layoutPriority(0.5).fixedSize(horizontal: false, vertical: true)
+                    }
+                    nsp()
+                    Text("SCP-015 was cut back to its current structure after attaching to 11 other structures in the area. Currently, 11 personnel have been killed, and 20 more are still missing. Reports have been made of banging and screaming coming from within SCP-015.").fixedSize(horizontal: false, vertical: true)
+                    Divider()
+                }
+                Group {
+                    Button(action:{
+                        withAnimation(.easeOut) {
+                            if(self.openmeta == false) {
+                                self.openmeta = true
+                            } else if(self.openmeta == true) {
+                                self.openmeta = false
+                            }
+                        }
+                    }) {
+                        if openmeta == false {
+                            Text("View Credits & Metadata")
+                        } else {
+                            Text("Close Credits & Metadata")
+                        }
+                    }
+                    if(openmeta == true) {
+                        VStack {
+                            Text("SCP-014 was created by Dr Gears on the SCP wiki. (https://scp-wiki.net/scp-015)").fixedSize(horizontal: false, vertical: true)
+                            nsp()
+                            Text("The documentation file on the app's database was last updated on March 8, 2020. Matches wiki revision 47.").fixedSize(horizontal: false, vertical: true)
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
 struct WorkingOn_Previews: PreviewProvider {
     static var previews: some View {
-        SCP014()
+        SCP015()
     }
 }
