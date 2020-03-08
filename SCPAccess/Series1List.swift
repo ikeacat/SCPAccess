@@ -141,6 +141,15 @@ struct Series1List: View {
                                     .foregroundColor(Color("Adaptive"))
                             }
                         }
+                        NavigationLink(destination:SCP014()) {
+                            HStack {
+                                Text("SCP-014")
+                                quickS(nil,five)
+                                Text("The Concrete Man")
+                                    .italic()
+                                    .foregroundColor(Color("Adaptive"))
+                            }
+                        }
                     }
                 }
             }
@@ -1560,8 +1569,78 @@ struct SCP013: View {
     }
 }
 
+struct SCP014: View {
+    @State var openmeta = false
+    var body: some View {
+        ScrollView {
+            VStack {
+                Group {
+                    Header()
+                    Image("SCP014")
+                    Text("SCP-014 prior to initial confinement.").font(.caption)
+                    Divider()
+                    headerLTT("SCP-014")
+                    itemnum("SCP-014")
+                    nsp()
+                    oc("Safe")
+                    nsp()
+                    Divider()
+                }
+                Group {
+                    spc()
+                    nsp()
+                    Text("SCP-014 is to be kept in Site-[REDACTED], in a chair with arms, preferably facing a window. Music should be supplied on a regular basis, preferably constantly. This music should not include pieces originating after 1937. A security camera should be present in SCP-014's room.").fixedSize(horizontal: false, vertical: true)
+                    Divider()
+                }
+                Group {
+                    desc()
+                    nsp()
+                    Text("SCP-014 is a Caucasian male, appearing to be approximately 30 years of age, with black hair, brown eyes, and a somewhat round face. Records indicate his name to be Robert Chetford, confined in 1915 to the Norwich Asylum in Connecticut for delusional insanity, claiming that he had been cursed to live forever, and was slowly turning into concrete in consequence. The asylum closed in 1937, and the patients were transferred to various other facilities. SCP-014 came to Foundation attention in 19[REDACTED], from rumours of a patient who seemed to be entirely immobile and showed no signs of aging. Further investigation determined that acquisition was warranted.").fixedSize(horizontal: false, vertical: true)
+                    nsp()
+                    Text("SCP-014 is to all outward appearances a normal man, but he does not appear to age, and shows no signs of possessing a metabolism. He does not eat, drink, perspire, or in any other way demonstrate life functions. He breathes only to speak, and apart from his eyes and vocal apparatus, is to all appearances utterly immobile. He has never shown any evidence of pressure ulcers despite his position not having varied for several decades; neither do his muscles appear atrophied. He can converse normally, but shows little knowledge of or interest in events since his confinement.").fixedSize(horizontal: false, vertical: true)
+                    Divider()
+                }
+                Group {
+                    HStack {
+                        Text("Addendum:").bold()
+                        Spacer()
+                    }
+                    nsp()
+                    Text("Note: Frankly, were I to interview this man without knowing his history, I'd think he was a perfectly sane and well-adjusted individual who happens to be quadriplegic. As it is, I have to conclude that he's the ultimate proof of the idea that the mind rules the body. He thinks he's concrete, and will live forever, and so he's as close to both as he can be. Somehow. Dr. [REDACTED]").italic().fixedSize(horizontal: false, vertical: true)
+                    Divider()
+                }
+                Group {
+                    Button(action:{
+                        withAnimation(.easeOut) {
+                            if(self.openmeta == false) {
+                                self.openmeta = true
+                            } else if(self.openmeta == true) {
+                                self.openmeta = false
+                            }
+                        }
+                    }) {
+                        if openmeta == false {
+                            Text("View Credits & Metadata")
+                        } else {
+                            Text("Close Credits & Metadata")
+                        }
+                    }
+                    if(openmeta == true) {
+                        VStack {
+                            Text("SCP-014 was created by Whitewings on the SCP wiki. (https://scp-wiki.net/scp-014)").fixedSize(horizontal: false, vertical: true)
+                            nsp()
+                            Text("The documentation file on the app's database was last updated on March 8, 2020. Matches wiki revision 18.").fixedSize(horizontal: false, vertical: true)
+                        }
+                    }
+                }
+            }.padding(.leading,5)
+            .padding(.trailing,5)
+        }
+    }
+}
+
 struct WorkingOn_Previews: PreviewProvider {
     static var previews: some View {
-        SCP013()
+        SCP014()
     }
 }

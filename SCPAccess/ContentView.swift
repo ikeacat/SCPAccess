@@ -44,18 +44,22 @@ struct HomeMenu: View {
         VStack {
             Header()
             nsp()
-            NavigationLink(destination: Series1List()) {
-                Text("Sort By Series")
-                    .font(.largeTitle)
-            }
-            nsp()
-            NavigationLink(destination: OCView()) {
-                Text("Sort By Object Class")
-                    .font(.largeTitle)
-            }
-            nsp()
-            NavigationLink(destination: Legal_Credits()) {
-                Text("Legal & Credits")
+            Text("SCP's 002 - 014").font(.title)
+            Divider()
+            Group {
+                NavigationLink(destination: Series1List()) {
+                    Text("Sort By Series")
+                        .font(.largeTitle)
+                }
+                nsp()
+                NavigationLink(destination: OCView()) {
+                    Text("Sort By Object Class")
+                        .font(.largeTitle)
+                }
+                nsp()
+                NavigationLink(destination: Legal_Credits()) {
+                    Text("Legal & Credits")
+                }
             }
         }
     }

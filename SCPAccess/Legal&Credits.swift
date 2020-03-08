@@ -86,6 +86,8 @@ struct credits: View {
                         nsp()
                         Text("SCP-013: author Dexanote (https://scp-wiki.net/scp-013)")
                         nsp()
+                        Text("SCP-014: author Whitewings (https://scp-wiki.net/scp-014)")
+                        nsp()
                     }
                 }
             }

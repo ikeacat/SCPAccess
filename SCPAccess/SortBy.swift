@@ -11,8 +11,8 @@ import SwiftUI
 struct EuclidView: View {
     var body: some View {
         ScrollView {
+        Header()
         VStack {
-            Header()
             Group {
                 NavigationLink(destination:SCP002()) {
                     HStack {
@@ -128,6 +128,15 @@ struct SafeView: View {
                             Text("SCP-013")
                             quickS(nil,five)
                             Text("Blue Lady Cigarettes")
+                                .italic()
+                                .foregroundColor(Color("Adaptive"))
+                        }
+                    }
+                    NavigationLink(destination:SCP014()) {
+                        HStack {
+                            Text("SCP-014")
+                            quickS(nil,five)
+                            Text("The Concrete Man")
                                 .italic()
                                 .foregroundColor(Color("Adaptive"))
                         }
