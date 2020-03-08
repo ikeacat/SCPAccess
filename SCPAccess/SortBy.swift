@@ -12,6 +12,7 @@ struct EuclidView: View {
     var body: some View {
         ScrollView {
         Header()
+        headerLTT("Euclid")
         VStack {
             Group {
                 NavigationLink(destination:SCP002()) {
@@ -95,6 +96,7 @@ struct SafeView: View {
         ScrollView {
             VStack {
                 Header()
+                headerLTT("Safe")
                 Group {
                     NavigationLink(destination:SCP005()) {
                         HStack {
@@ -156,6 +158,32 @@ struct SafeView: View {
     }
 }
 
+struct KeterView: View {
+    var body: some View {
+        ScrollView {
+            VStack {
+                VStack {
+                    Header()
+                    headerLTT("Keter")
+                }
+                Group {
+                    Group {
+                        NavigationLink(destination:SCP016()) {
+                            HStack {
+                                Text("SCP-016")
+                                quickS(nil,five)
+                                Text("Sentient Micro-Organism")
+                                .italic()
+                                .foregroundColor(Color("Adaptive"))
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
 struct OCView: View {
     var body: some View {
         VStack {
@@ -168,6 +196,11 @@ struct OCView: View {
             nsp()
             NavigationLink(destination:SafeView()) {
                 Text("Safe")
+                    .font(.largeTitle)
+            }
+            nsp()
+            NavigationLink(destination:KeterView()) {
+                Text("Keter")
                     .font(.largeTitle)
             }
         }

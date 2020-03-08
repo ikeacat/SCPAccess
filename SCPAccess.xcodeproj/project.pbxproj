@@ -17,6 +17,7 @@
 		102F197623C75325008A6697 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 102F197523C75325008A6697 /* Preview Assets.xcassets */; };
 		102F197923C75325008A6697 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 102F197723C75325008A6697 /* LaunchScreen.storyboard */; };
 		102F198323C753BC008A6697 /* Header.swift in Sources */ = {isa = PBXBuildFile; fileRef = 102F198223C753BC008A6697 /* Header.swift */; };
+		104053A624156FA30046E4E9 /* unicodethings.txt in Resources */ = {isa = PBXBuildFile; fileRef = 104053A524156FA30046E4E9 /* unicodethings.txt */; };
 		104F423924077FDB0057B2F5 /* Testthing.xml in Resources */ = {isa = PBXBuildFile; fileRef = 104F423824077FDB0057B2F5 /* Testthing.xml */; };
 		104F938323D2497900630755 /* SortBy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 104F938223D2497800630755 /* SortBy.swift */; };
 		10EAFF5623FC24FF0082572A /* XMLParseExpiriment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10EAFF5523FC24FF0082572A /* XMLParseExpiriment.swift */; };
@@ -49,6 +50,7 @@
 		102F197823C75325008A6697 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		102F197A23C75325008A6697 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		102F198223C753BC008A6697 /* Header.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Header.swift; sourceTree = "<group>"; };
+		104053A524156FA30046E4E9 /* unicodethings.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = unicodethings.txt; sourceTree = "<group>"; };
 		104F423824077FDB0057B2F5 /* Testthing.xml */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = Testthing.xml; sourceTree = "<group>"; };
 		104F938223D2497800630755 /* SortBy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SortBy.swift; sourceTree = "<group>"; };
 		10C5A83323E7D19C003C32F2 /* GoogleMobileAds.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = GoogleMobileAds.framework; sourceTree = "<group>"; };
@@ -105,6 +107,7 @@
 				102F197723C75325008A6697 /* LaunchScreen.storyboard */,
 				102F197A23C75325008A6697 /* Info.plist */,
 				102F197423C75325008A6697 /* Preview Content */,
+				104053A524156FA30046E4E9 /* unicodethings.txt */,
 			);
 			path = SCPAccess;
 			sourceTree = "<group>";
@@ -192,6 +195,7 @@
 				104F423924077FDB0057B2F5 /* Testthing.xml in Resources */,
 				102F197323C75325008A6697 /* Assets.xcassets in Resources */,
 				10EAFF5823FC25DF0082572A /* Test.xml in Resources */,
+				104053A624156FA30046E4E9 /* unicodethings.txt in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

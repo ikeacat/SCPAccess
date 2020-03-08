@@ -159,6 +159,15 @@ struct Series1List: View {
                                     .foregroundColor(Color("Adaptive"))
                             }
                         }
+                        NavigationLink(destination:SCP016()) {
+                            HStack {
+                                Text("SCP-016")
+                                quickS(nil,five)
+                                Text("Sentient Micro-Organism")
+                                .italic()
+                                .foregroundColor(Color("Adaptive"))
+                            }
+                        }
                     }
                 }
             }
@@ -1707,19 +1716,100 @@ struct SCP015: View {
                     }
                     if(openmeta == true) {
                         VStack {
-                            Text("SCP-014 was created by Dr Gears on the SCP wiki. (https://scp-wiki.net/scp-015)").fixedSize(horizontal: false, vertical: true)
+                            Text("SCP-015 was created by Dr Gears on the SCP wiki. (https://scp-wiki.net/scp-015)").fixedSize(horizontal: false, vertical: true)
                             nsp()
                             Text("The documentation file on the app's database was last updated on March 8, 2020. Matches wiki revision 47.").fixedSize(horizontal: false, vertical: true)
                         }
                     }
                 }
-            }
+            }.padding(.leading,5)
+            .padding(.trailing,5)
+        }
+    }
+}
+
+struct SCP016: View {
+    @State var openmeta = false
+    var body: some View {
+        ScrollView {
+            VStack {
+                Group {
+                    Header()
+                    headerLTT("SCP-016")
+                    itemnum("SCP-016")
+                    nsp()
+                    oc("Keter")
+                    nsp()
+                    Divider()
+                }
+                Group {
+                    spc()
+                    nsp()
+                    Text("SCP-016 is to remain within the confines of a five by five by five (5x5x5) meter room at all times, maintained at a temperature not to exceed zero degrees Celsius. SCP-016 itself is to remain in the petri dish in the containment cube at all times unless directed otherwise by Level 4 or O5 personnel. Full documentation of experimentation with SCP-016 must be submitted before and after samples and duplicates of SCP-016 may be taken. Failure to follow these procedures will result in termination or reassignment as Class-D Personnel. Only authorized personnel may be permitted to obtain samples of and experiment with SCP-016 under BC-L5 containment conditions.").fixedSize(horizontal: false, vertical: true)
+                    nsp()
+                    Text("If an outbreak does occur despite following the aforementioned procedures, directive base personnel are to implement a Code Sigma lockdown and containment plan. Infected personnel are to be terminated on site by security forces wearing standard Mission Oriented Protective Posture (MOPP) anti-biological and anti-chemical equipment. Should the infection not be contained after 48 hours, the on-site nuclear device is to be detonated. Remaining personnel are not to be evacuated under any circumstances.").fixedSize(horizontal: false, vertical: true)
+                    nsp()
+                    Text("SCP-016 has been shown to survive for up to six hours on hard surfaces, and up to several minutes in air. High intensity ultraviolet light and high concentrations of ortho-phthalaldehyde solution have been demonstrated to be effective in disinfecting non-organic surfaces.").fixedSize(horizontal: false, vertical: true)
+                    Divider()
+                }
+                Group {
+                    desc()
+                    nsp()
+                    Text("SCP-016 is a blood-borne pathogen recovered from a mine worker in [REDACTED] who injured himself while working in a deep coal seam. Said wound became contaminated with coal dust from the mine, possibly infecting the worker with dormant spores. Over the next several days, SCP-016 proceeded to infect the remaining employees at the mining camp, as well as the CDC crisis team dispatched to deal with the epidemic. Foundation personnel then took over the investigation and terminated all affected personnel. Patient Zero was brought into captivity, and the mine shaft was collapsed by an explosive device.").fixedSize(horizontal: false, vertical: true)
+                    nsp()
+                    Text("SCP-016 has an incubation period ranging from 24 hours to two years, depending on the presence and number of other human hosts in the area. First symptoms resemble the common cold, and include itchy eyes, runny nose, coughing, and bodily aches. Phase two begins in 48 hours, and consists of a controlled form of hemorrhagic fever, as the organism causes a small amount of blood to become aspirated in the lungs, creating an aerosol effect. During phase three, the host \"crashes and bleeds out,\" bleeding profusely from every bodily orifice, including the nose, tear ducts, anus, skin pores, mouth, urethra, and (in case of females) vagina. Blood pressure skyrockets during the final stage: hosts have been observed projectile vomiting blood to distances of over five meters. Should the host survive this near-total exsanguination, the pathogen will become dormant once more, returning to incubation phase.").fixedSize(horizontal: false, vertical: true)
+                    nsp()
+                    Text("What distinguishes SCP-016 from other strains of hemorrhagic fever such as Ebola and Marburg is its unusual response to high stress. Should the subject undergo a high-stress situation (such as a life-threatening crisis), the organism will change its survival tactic from rapid reproduction to the rewriting of the host's DNA and stimulation of rapid cell division. Major physiological changes occur within the first 24 hours, with complete bodily reconstruction occurring within two (2) weeks time. Most hosts do not survive the process due to the heavy demands made on the body. (See Footnote 1)").fixedSize(horizontal: false, vertical: true)
+                    nsp()
+                    Text("An interesting side effect of the transformation is an increased aggressive urge. It is believed that this may be an attempt to maximize the spread of the virus in a manner similar to rabies. On another note, subjects who undergo bodily transformation no longer appear to exhibit SCP-016's hemorrhagic properties: however, subjects infected by transformed hosts will still undergo the normal SCP-016 infection process.").fixedSize(horizontal: false, vertical: true)
+                    Divider()
+                }
+                Group {
+                    HStack {
+                        Text("Addendum:").bold()
+                        Text("Experiment Log of SCP-016's Transformative Properties").fixedSize(horizontal: false, vertical: true)
+                        Spacer()
+                    }
+                    nsp()
+                    Text("\u{2022} Subject D-016-3: D-Class personnel infected by SCP-016. Subject was previously a chemical engineer who poisoned his wife upon discovering her adultery. Upon first showing symptoms, subject's quarters were slowly flooded with water over a 24 hour period. SCP-016 mutated into teratomorphic state, causing subject to grow an unusual organ on his chest, consisting of a chamber and two (2) separate tubes. Organ continued to take in water and swell in size, until Foundation personnel, realizing what SCP-016 may be attempting, terminated the subject by gunshot. Organ was found to contain several gas sacs filled with acetylene gas and oxygen.").fixedSize(horizontal: false, vertical: true)
+                    nsp()
+                    Text("\u{2022} Subject D-016-4: D-Class personnel infected by SCP-016. Subject was told to concentrate on forming wings. No stress was applied. SCP-016 did not mutate into teratomorphic state. Subject died of exsanguination during Phase 3.").fixedSize(horizontal: false, vertical: true)
+                    nsp()
+                    Text("\u{2022} Subject D-016-5: D-Class personnel infected by SCP-016. Subject was told to concentrate on forming wings and placed in an acrylic box suspended 305 m (1000 ft) above a mine shaft. A timer was placed outside the box which subject was told indicated the time to release. SCP-016 mutated into teratomorphic state, causing subject to grow a tentacle-like organ on his left wrist similar to a spider's spinnerets: subject extended said organ through one of the box's air holes and extruded a strong, silk-like substance, which it then used to secure the box to the cable. Subject was terminated when the countdown reached zero and the bomb detonated.").fixedSize(horizontal: false, vertical: true)
+                    Divider()
+                }
+                Group {
+                    Button(action:{
+                        withAnimation(.easeOut) {
+                            if(self.openmeta == false) {
+                                self.openmeta = true
+                            } else if(self.openmeta == true) {
+                                self.openmeta = false
+                            }
+                        }
+                    }) {
+                        if openmeta == false {
+                            Text("View Credits & Metadata")
+                        } else {
+                            Text("Close Credits & Metadata")
+                        }
+                    }
+                    if(openmeta == true) {
+                        VStack {
+                            Text("SCP-016 was created by DrClef on the SCP wiki. (https://scp-wiki.net/scp-016)").fixedSize(horizontal: false, vertical: true)
+                            nsp()
+                            Text("The documentation file on the app's database was last updated on March 8, 2020. Matches wiki revision 28.").fixedSize(horizontal: false, vertical: true)
+                        }
+                    }
+                }
+            }.padding(.leading,5)
+            .padding(.trailing,5)
         }
     }
 }
 
 struct WorkingOn_Previews: PreviewProvider {
     static var previews: some View {
-        SCP015()
+        SCP016()
     }
 }
