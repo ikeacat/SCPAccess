@@ -91,6 +91,11 @@ struct credits: View {
                         Text("SCP-015: author Dr Gears (https://scp-wiki.net/scp-015)")
                         nsp()
                         Text("SCP-016: author DrClef (https://scp-wiki.net/scp-016)")
+                        nsp()
+                    }
+                    Group {
+                        Text("SCP-017: author Kain Pathos Crow (https://scp-wiki.net/scp-017)")
+                        nsp()
                     }
                 }
             }

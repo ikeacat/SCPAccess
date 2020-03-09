@@ -168,6 +168,15 @@ struct Series1List: View {
                                 .foregroundColor(Color("Adaptive"))
                             }
                         }
+                        NavigationLink(destination:SCP017()) {
+                            HStack {
+                                Text("SCP-017")
+                                quickS(nil,five)
+                                Text("Shadow Person")
+                                .italic()
+                                .foregroundColor(Color("Adaptive"))
+                            }
+                        }
                     }
                 }
             }
@@ -1501,9 +1510,9 @@ struct SCP013: View {
             VStack {
                 Group {
                     Header()
+                    headerLTT("SCP-013")
                     Image("SCP013")
                     Divider()
-                    headerLTT("SCP-013")
                     itemnum("SCP-013")
                     nsp()
                     oc("Euclid")
@@ -1594,10 +1603,10 @@ struct SCP014: View {
             VStack {
                 Group {
                     Header()
+                    headerLTT("SCP-014")
                     Image("SCP014")
                     Text("SCP-014 prior to initial confinement.").font(.caption)
                     Divider()
-                    headerLTT("SCP-014")
                     itemnum("SCP-014")
                     nsp()
                     oc("Safe")
@@ -1664,10 +1673,10 @@ struct SCP015: View {
             VStack {
                 Group {
                     Header()
+                    headerLTT("SCP-015")
                     Image("SCP015")
                     Text("Interior View of SCP-015").font(.caption)
                     Divider()
-                    headerLTT("SCP-015")
                     itemnum("SCP-015")
                     nsp()
                     oc("Euclid")
@@ -1808,8 +1817,82 @@ struct SCP016: View {
     }
 }
 
+struct SCP017: View {
+    @State var openmeta = false
+    var body: some View {
+        ScrollView {
+            VStack {
+                Group {
+                    Header()
+                    headerLTT("SCP-017")
+                    Image("SCP017").fixedSize()
+                    .frame(maxWidth:40)
+                    Text("File Footage of SCP-017").font(.caption)
+                    Divider()
+                    itemnum("SCP-017")
+                    nsp()
+                    oc("Keter")
+                    nsp()
+                    Divider()
+                }
+                Group {
+                    spc()
+                    nsp()
+                    Text("SCP-017 is contained in an acrylic glass cage, 100 cm by 50 cm by 50 cm, centrally suspended in a concrete room measuring 6 m by 6 m by 4 m. Attached to the walls, ceiling, and floor of the room are high-intensity arc lamp spotlights pointed directly at the acrylic cage, to ensure that SCP-017 is constantly exposed to light from every angle. Personnel assigned to the SCP-017 control room are to monitor the functionality of the spotlights and the emergency generator system and call for maintenance immediately upon knowledge of a burnt-out lamp or an issue with the generator.").fixedSize(horizontal: false, vertical: true)
+                    nsp()
+                    Text("The only circumstance under which personnel are allowed entrance is to replace lamps. Personnel entering the room are required to wear the designated full-body reflective suits, and must be cautioned not to step in front of functional spotlights.").fixedSize(horizontal: false, vertical: true)
+                    Divider()
+                }
+                Group {
+                    desc()
+                    nsp()
+                    Text("SCP-017 is a humanoid figure approximately 80 centimeters in height, anatomically similar to a small child, but with no discernible identifying features. SCP-017 seems composed of a shadowy, smoke-like shroud. No attempt to find any object beneath the shroud has been successful, but the possibility has not been ruled out.").fixedSize(horizontal: false, vertical: true)
+                    nsp()
+                    Text("SCP-017's reaction to shadows cast upon it is immediate and swift. SCP-017 leaps at the object casting the shadow and completely encloses it in its shroud, whereupon it returns to its normal size, leaving no trace of the object behind.").fixedSize(horizontal: false, vertical: true)
+                    Divider()
+                }
+                Group {
+                    HStack {
+                        Text("Additional Notes:").bold()
+                        Spacer()
+                    }
+                    nsp()
+                    Text("Personnel with BETA clearance or higher should see also document #017-1.").fixedSize(horizontal: false, vertical: true)
+                    Divider()
+                }
+                Group {
+                    Button(action:{
+                        withAnimation(.easeOut) {
+                            if(self.openmeta == false) {
+                                self.openmeta = true
+                            } else if(self.openmeta == true) {
+                                self.openmeta = false
+                            }
+                        }
+                    }) {
+                        if openmeta == false {
+                            Text("View Credits & Metadata")
+                        } else {
+                            Text("Close Credits & Metadata")
+                        }
+                    }
+                    if(openmeta == true) {
+                        VStack {
+                            Text("SCP-017 was created by Kain Pathos Crow on the SCP wiki. (https://scp-wiki.net/scp-017)").fixedSize(horizontal: false, vertical: true)
+                            nsp()
+                            Text("The documentation file on the app's database was last updated on March 9, 2020. Matches wiki revision 27.").fixedSize(horizontal: false, vertical: true)
+                            nsp()
+                        }
+                    }
+                }
+            }.padding(.leading,5)
+            .padding(.trailing,5)
+        }
+    }
+}
+
 struct WorkingOn_Previews: PreviewProvider {
     static var previews: some View {
-        SCP016()
+        SCP017()
     }
 }

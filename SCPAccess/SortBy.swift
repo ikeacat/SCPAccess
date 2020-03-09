@@ -177,6 +177,15 @@ struct KeterView: View {
                                 .foregroundColor(Color("Adaptive"))
                             }
                         }
+                        NavigationLink(destination:SCP017()) {
+                            HStack {
+                                Text("SCP-017")
+                                quickS(nil,five)
+                                Text("Shadow Person")
+                                .italic()
+                                .foregroundColor(Color("Adaptive"))
+                            }
+                        }
                     }
                 }
             }
