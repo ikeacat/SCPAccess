@@ -199,17 +199,17 @@ struct OCView: View {
             Header()
             nsp()
             NavigationLink(destination:EuclidView()) {
-                Text("Euclid")
+                Text("Euclid (8)")
                     .font(.largeTitle)
             }
             nsp()
             NavigationLink(destination:SafeView()) {
-                Text("Safe")
+                Text("Safe (6)")
                     .font(.largeTitle)
             }
             nsp()
             NavigationLink(destination:KeterView()) {
-                Text("Keter")
+                Text("Keter (2)")
                     .font(.largeTitle)
             }
         }
