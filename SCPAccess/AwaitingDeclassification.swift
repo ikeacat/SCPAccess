@@ -45,6 +45,35 @@ struct AwaitingDeclassification: View { // Root View.
                                 .foregroundColor(Color("AdaptiveRed"))
                             Divider()
                         }
+                        Group {
+                            Button(action:{
+                                withAnimation(.easeInOut) {
+                                    self.openDocList = true
+                                }
+                            }) {
+                                Text("Enter").font(.largeTitle).fixedSize(horizontal: false, vertical: true)
+                            }
+                        }
+                    }
+                }
+                else if openDocList == true {
+                    Group {
+                        Group {
+                            Image("SCP001MKA").resizable().frame(height:340)
+                            nsp()
+                            Text("MEMETIC KILL AGENT ACTIVATED").bold()
+                            nsp()
+                            Text("CONTINUED LIFE SIGNS CONFIRMED").bold()
+                            nsp()
+                            Text("REMOVING SAFETY INTERLOCKS").bold()
+                            nsp()
+                            Text("Welcome, authorized personnel.").italic()
+                            Text("Please select your desired file.").italic()
+                        }
+                        Group {
+                            Divider()
+                            
+                        }
                     }
                 }
             }.padding(.leading,5)
