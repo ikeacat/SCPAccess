@@ -23,12 +23,14 @@ struct Series1List: View {
                 Divider()
                 quickS(nil,nss)
                 VStack { // There should be 1 VStack per 10 Entries
-                    HStack { // SCP-001, This will be the last entry put in after Series 4
-                        Text("SCP-001")
+                    NavigationLink(destination:AwaitingDeclassification()) {
+                        HStack { // SCP-001, This will be the last entry put in after Series 4
+                            Text("SCP-001")
                             .foregroundColor(.red)
-                        quickS(nil,five)
-                        Text("Awaiting De-classification [DOCS BLOCKED]")
+                            quickS(nil,five)
+                            Text("Awaiting De-classification [DOCS BLOCKED]")
                             .italic()
+                        }
                     }
                     Group {
                         NavigationLink(destination:SCP002()) { // SCP-002

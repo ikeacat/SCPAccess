@@ -103,6 +103,12 @@ public func quickS(_ hsize:CGFloat?, _ wsize:CGFloat?) -> some View {
     }
 }
 
+public func addendumTextHead(_ text:String) -> some View {
+    return HStack {
+        Text(text).bold()
+    }
+}
+
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
         ContentView()
